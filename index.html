@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>模拟志愿填报</title>
+<link href="DaiMa/JiBenYangShi.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.Chaoji {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 100px;
+}
+.wenjian {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 36px;
+}
+
+.jishi {
+    text-align: center;
+	font-size: 100px;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 1px;
+	font-weight: 900;
+}
+.duanluo {
+	margin-bottom: 1px;
+}
+
+</style>
+<style>
+    #hshmeng {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px;
+    }
+</style>
+</head>
+<!-- 还不快蟹蟹猛哥！不蟹蟹猛哥，猛哥就把你抓走！（哭 -->
+<body>
+<h1>&nbsp;</h1>
+<table width="92%" border="0" align="center" class="ShiPei_BiaoTi">
+  <tbody>
+    <tr>
+      <td width="1212" align="center" valign="top"><h1>这里是模拟志愿填报<span class="ChaoLianJie_BiaoTi">(<a href="ShiJian.html" class="wenjian">志愿报名时间表2023版</a>)</span></h1>
+        <h4>（参考：中考中招系统http://zkzz.nbedu.net.cn/  时间：2023年6月10日）</h4>
+      <h3><span class="duanluo">制作：hshmeng@foxmail.com</span></h3></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top" height="100">距离中考：<p id="countdown" class="jishi"></p></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top"><a href="IntentionFill.html" class="Chaoji">模拟填报链接（2023年）</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top"><p><a href="YiNanJieDa.html">疑难解答</a></p>
+      <p>欢迎加入”<a href="hshmeng.html">宁波职业技术教育中心学校</a>“QQ频道&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top"><p>（<span style="font-size: 24px">网站未做手机适配；</span></p>
+      <p><span style="font-size: 24px">但是！志愿填报界面是手机适配过的</span>）</p></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top"><p><a href="twotwo.html">2024年中考信息</a></p>
+        <p><a href="http://cjcx.nbedu.net.cn:8010/app/">中考成绩查询官方链接</a></p>
+        <p><a href="http://zkzz.nbedu.net.cn/">中考中招系统链接</a></p>
+        <p><a href="http://nbeea.nbedu.net.cn/school/NeiRead.aspx?id=2643">23年宁波中考试卷题目及答案 (nbedu.net.cn)</a></p>
+        <p><a href="http://nbeea.nbedu.net.cn/school/NeiRead.aspx?id=2348">22年宁波中考试卷题目及答案 (nbedu.net.cn)</a></p>
+      <p><a href="http://jyj.ningbo.gov.cn/art/2023/7/1/art_1229166694_58913791.html">2023年宁波市直属普通高中(统招)投档分数线揭晓 (ningbo.gov.cn)</a></p></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center" valign="top">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center" valign="top">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center" valign="top">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+  <script>
+    // 目标日期（2024年6月15日）
+    var targetDate = new Date("June 15, 2024").getTime();
+
+    // 更新倒计时
+    function updateCountdown() {
+      // 获取当前日期和时间
+      var currentDate = new Date().getTime();
+
+      // 计算剩余时间（以毫秒为单位）
+      var remainingTime = targetDate - currentDate;
+
+      // 将剩余时间转换为天、小时、分钟和秒
+      var days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+      // 显示倒计时
+      document.getElementById("countdown").innerHTML = days + "天 " + hours + "小时 " + minutes + "分钟 " + seconds + "秒";
+    }
+
+    // 每秒更新倒计时
+    setInterval(updateCountdown, 1000);
+	</script>
+<div id="hshmeng">欢迎投稿和询问有关事情，邮箱：hshmeng@foxmail.com</div>
+</body>
+</html>
